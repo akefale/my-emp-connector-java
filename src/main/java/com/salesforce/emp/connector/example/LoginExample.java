@@ -32,7 +32,7 @@ import java.io.IOException;
  */
 public class LoginExample {
     public static void main(String[] argv) throws Exception {
-        if (argv.length < 3 || argv.length > 4) {
+        if (argv.length < 6 || argv.length > 7) {
             System.err.println("Usage: LoginExample username password topic [replayFrom]");
             System.exit(1);
         }

@@ -33,15 +33,14 @@ import java.io.IOException;
 public class LoginExample {
     public static void main(String[] argv) throws Exception {
     	System.out.println("Inside LoginExample..............####################..............");
-        if (argv.length < 3) { // || argv.length > 4) {
-            System.err.println("Usage: LoginExample username password list_of_topics each separated by a space...");
+        if (argv.length < 3 || argv.length > 4) {
+            System.err.println("Usage: LoginExample username password topic [replayFrom]");
             System.exit(1);
         }
-        
         long replayFrom = EmpConnector.REPLAY_FROM_EARLIEST;
-        /*if (argv.length == 4) {
+        if (argv.length == 4) {
             replayFrom = Long.parseLong(argv[3]);
-        }*/
+        }
 
         BearerTokenProvider tokenProvider = new BearerTokenProvider(() -> {
             try {
@@ -55,6 +54,8 @@ public class LoginExample {
 
         BayeuxParameters params = tokenProvider.login();
 
+        Consumer<Map<String, Object>> consumer = event -> System.out.println(String.format("Received:\n%s", JSON.toString(event)));   //writeToFile(JSON.toString(event));
+
         /*try {	
         	System.out.println("Calling writeToFile");
 	        Consumer<Map<String, Object>> consumer2 = event -> writeToFile(JSON.toString(JSON.toString(event)));
@@ -62,24 +63,16 @@ public class LoginExample {
         } catch(Exception e) {
         	e.printStackTrace();
         }*/
-
-        Consumer<Map<String, Object>> employeeConsumer = employeeEvent -> System.out.println(String.format("Received Employee update:\n%s", JSON.toString(employeeEvent)));   //writeToFile(JSON.toString(event));
 	        
-        Consumer<Map<String, Object>> playerConsumer = playerEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(playerEvent)));   //writeToFile(JSON.toString(event));
-        
         EmpConnector connector = new EmpConnector(params);
 
         connector.setBearerTokenProvider(tokenProvider);
 
         connector.start().get(5, TimeUnit.SECONDS);
 
-        TopicSubscription employeeSubscription = connector.subscribe(argv[2], replayFrom, employeeConsumer).get(5, TimeUnit.SECONDS);
+        TopicSubscription subscription = connector.subscribe(argv[2], replayFrom, consumer).get(5, TimeUnit.SECONDS);
 
-        TopicSubscription playerSubscription = connector.subscribe(argv[3], replayFrom, playerConsumer).get(5, TimeUnit.SECONDS);
-
-        System.out.println(String.format("Subscribed: %s", employeeSubscription));
-
-        System.out.println(String.format("Subscribed: %s", playerSubscription));
+        System.out.println(String.format("Subscribed: %s", subscription));
     }
 
 	private static void writeToFile(String eventData) {

@@ -1,1 +1,1 @@
-web: java -jar target/emp-connector-0.0.1-SNAPSHOT-phat.jar https://login.salesforce.com anteneh_w_kefale@fanniemae.com Yamyam49: /topic/Player_Updates -2
+web: java -jar target/emp-connector-0.0.1-SNAPSHOT-phat.jar anteneh_w_kefale@fanniemae.com Yamyam49: /topic/Player_Updates -2

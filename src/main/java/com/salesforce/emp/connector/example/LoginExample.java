@@ -55,17 +55,17 @@ public class LoginExample {
 
         BayeuxParameters params = tokenProvider.login();
 
-        try {	
+        /*try {	
         	System.out.println("Calling writeToFile");
 	        Consumer<Map<String, Object>> consumer2 = event -> writeToFile(JSON.toString(JSON.toString(event)));
         	System.out.println("After calling writeToFile");
         } catch(Exception e) {
         	e.printStackTrace();
-        }
+        }*/
 
-        Consumer<Map<String, Object>> employeeConsumer = event -> System.out.println(String.format("Received Employee update:\n%s", JSON.toString(event)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> employeeConsumer = employeeEvent -> System.out.println(String.format("Received Employee update:\n%s", JSON.toString(employeeEvent)));   //writeToFile(JSON.toString(event));
 	        
-        Consumer<Map<String, Object>> playerConsumer = event -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(event)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> playerConsumer = playerEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(playerEvent)));   //writeToFile(JSON.toString(event));
         
         EmpConnector connector = new EmpConnector(params);
 

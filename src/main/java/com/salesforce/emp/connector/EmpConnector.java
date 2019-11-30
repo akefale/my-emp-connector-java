@@ -100,7 +100,7 @@ public class EmpConnector {
         }
     }
 
-    public static long REPLAY_FROM_EARLIEST = -1L;
+    public static long REPLAY_FROM_EARLIEST = -2L;
     public static long REPLAY_FROM_TIP = -1L;
 
     private static String AUTHORIZATION = "Authorization";

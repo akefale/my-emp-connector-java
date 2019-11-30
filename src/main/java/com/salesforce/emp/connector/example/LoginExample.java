@@ -67,6 +67,8 @@ public class LoginExample {
 	        
         Consumer<Map<String, Object>> playerConsumer = playerEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(playerEvent)));   //writeToFile(JSON.toString(event));
         
+        Consumer<Map<String, Object>> opportunityConsumer = opportunityEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(opportunityEvent)));   //writeToFile(JSON.toString(event));
+        
         EmpConnector connector = new EmpConnector(params);
 
         connector.setBearerTokenProvider(tokenProvider);
@@ -77,9 +79,13 @@ public class LoginExample {
 
         TopicSubscription playerSubscription = connector.subscribe(argv[3], replayFrom, playerConsumer).get(5, TimeUnit.SECONDS);
 
+        TopicSubscription opportunitySubscription = connector.subscribe(argv[3], replayFrom, opportunityConsumer).get(5, TimeUnit.SECONDS);
+
         System.out.println(String.format("Subscribed: %s", employeeSubscription));
 
         System.out.println(String.format("Subscribed: %s", playerSubscription));
+
+        System.out.println(String.format("Subscribed: %s", opportunitySubscription));
     }
 
 	private static void writeToFile(String eventData) {

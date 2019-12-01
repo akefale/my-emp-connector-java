@@ -122,6 +122,13 @@
                 </executions>
                 <configuration>
                     <attach>true</attach>
+		            <assembleDirectory>target</assembleDirectory>
+		            <programs>
+		                <program>
+		                    <mainClass>com.salesforce.emp.connector.example</mainClass>
+		                    <name>worker</name>
+		                </program>
+		            </programs>
                 </configuration>
             </plugin>
         </plugins>

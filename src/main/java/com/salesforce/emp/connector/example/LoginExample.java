@@ -67,7 +67,7 @@ public class LoginExample {
 	        
         Consumer<Map<String, Object>> playerConsumer = playerEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(playerEvent)));   //writeToFile(JSON.toString(event));
         
-        Consumer<Map<String, Object>> opportunityConsumer = opportunityEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(opportunityEvent)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> opportunityConsumer = opportunityEvent -> System.out.println(String.format("Received Opportunity update:\n%s", JSON.toString(opportunityEvent)));   //writeToFile(JSON.toString(event));
         
         EmpConnector connector = new EmpConnector(params);
 

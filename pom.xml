@@ -122,7 +122,7 @@
                 </executions>
                 <configuration>
                     <attach>true</attach>
-		            <assembleDirectory>target</assembleDirectory>
+		            <assembleDirectory>target/classes</assembleDirectory>
 		            <programs>
 		                <program>
 		                    <mainClass>com.salesforce.emp.connector.example.LoginExample</mainClass>

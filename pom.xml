@@ -113,10 +113,10 @@
           <artifactId>appassembler-maven-plugin</artifactId>
           <version>1.1.1</version>
           <configuration>
-            <assembleDirectory>target/classes</assembleDirectory>
+            <assembleDirectory>target/classes/com/salesforce/emp/connector/example</assembleDirectory>
             <programs>
                 <program>
-                    <mainClass>com.salesforce.emp.connector.example.LoginExample</mainClass>
+                    <mainClass>LoginExample</mainClass>
                     <name>worker</name>
                 </program>
             </programs>

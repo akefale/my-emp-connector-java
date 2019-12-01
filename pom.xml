@@ -125,7 +125,7 @@
 		            <assembleDirectory>target</assembleDirectory>
 		            <programs>
 		                <program>
-		                    <mainClass>com.salesforce.emp.connector.example</mainClass>
+		                    <mainClass>com.salesforce.emp.connector.example.LoginExample</mainClass>
 		                    <name>worker</name>
 		                </program>
 		            </programs>

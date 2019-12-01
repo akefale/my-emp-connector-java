@@ -130,6 +130,7 @@
 		                </program>
 		            </programs>
                 </configuration>
+                
             </plugin>
         </plugins>
     </build>

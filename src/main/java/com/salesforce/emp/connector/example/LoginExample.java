@@ -79,7 +79,7 @@ public class LoginExample {
 
         TopicSubscription playerSubscription = connector.subscribe(argv[3], replayFrom, playerConsumer).get(5, TimeUnit.SECONDS);
 
-        TopicSubscription opportunitySubscription = connector.subscribe(argv[3], replayFrom, opportunityConsumer).get(5, TimeUnit.SECONDS);
+        TopicSubscription opportunitySubscription = connector.subscribe(argv[4], replayFrom, opportunityConsumer).get(5, TimeUnit.SECONDS);
 
         System.out.println(String.format("Subscribed: %s", employeeSubscription));
 

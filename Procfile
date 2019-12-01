@@ -1,1 +1,1 @@
-worker: sh target/classes/com/salesforce/emp/connector/example/worker $USER_NAME $PASSWORD /topic/Employee_Updates /topic/Player_Updates /topic/Opportunity_Updates
+web: java -Dserver.port=5000 -jar target/emp-connector-0.0.1-SNAPSHOT-phat.jar $USER_NAME $PASSWORD /topic/Employee_Updates /topic/Player_Updates /topic/Opportunity_Updates

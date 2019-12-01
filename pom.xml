@@ -100,7 +100,7 @@
 
     <build>
         <plugins>
-        <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
@@ -108,33 +108,29 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-          <artifactId>appassembler-maven-plugin</artifactId>
-          <version>1.1.1</version>
-          <configuration>
-            <assembleDirectory>target/classes/com/salesforce/emp/connector/example</assembleDirectory>
-            <programs>
-                <program>
-                    <mainClass>LoginExample</mainClass>
-                    <name>worker</name>
-                </program>
-            </programs>
-          </configuration>
-          <executions>
-              <execution>
-                  <phase>package</phase><goals><goal>assemble</goal></goals>
-              </execution>
-          </executions>
-      </plugin>
-      
-      
-      
-      
-      
-      
-      
-      
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <attach>true</attach>
+		            <assembleDirectory>target</assembleDirectory>
+		            <programs>
+		                <program>
+		                    <mainClass>com.salesforce.emp.connector.example.LoginExample</mainClass>
+		                    <name>worker</name>
+		                </program>
+		            </programs>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

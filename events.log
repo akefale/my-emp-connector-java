@@ -1,0 +1,101 @@
+
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-01T07:40:37.398Z","replayId":19,"type":"updated"},"sobject":{"Position__c":"Forward","First_Name__c":"Michael","Id":"a034T000004cRv6QAE","Last_Name__c":"Idombi"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-01T07:39:48.487Z","replayId":3,"type":"updated"},"sobject":{"Amount":50000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T19:56:05.536Z","replayId":1,"type":"updated"},"sobject":{"First_Name__c":"Johnsa","Id":"a004T0000028haxQAA","Tenure__c":6.0,"Last_Name__c":"Hunana"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-01T19:43:24.433Z","replayId":20,"type":"updated"},"sobject":{"Position__c":"Forward","First_Name__c":"Michael","Id":"a034T000004cRv6QAE","Last_Name__c":"Indombo"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-01T19:38:28.003Z","replayId":4,"type":"updated"},"sobject":{"Amount":55000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-01T19:56:31.148Z","replayId":21,"type":"updated"},"sobject":{"Position__c":"Stage","First_Name__c":"Morrison","Id":"a034T000004cZuuQAE","Last_Name__c":"Mike"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T19:57:42.693Z","replayId":2,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambinu"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-01T19:44:38.981Z","replayId":5,"type":"updated"},"sobject":{"Amount":65000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-01T20:00:58.499Z","replayId":22,"type":"updated"},"sobject":{"Position__c":"Midfielders","First_Name__c":"Joses","Id":"a034T000004cRrJQAU","Last_Name__c":"Rosano"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T19:58:26.227Z","replayId":3,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambinui"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-01T20:01:37.020Z","replayId":6,"type":"updated"},"sobject":{"Amount":75000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-02T03:46:23.861Z","replayId":23,"type":"updated"},"sobject":{"Position__c":"Midfielders","First_Name__c":"Joses","Id":"a034T000004cRrJQAU","Last_Name__c":"Rosano"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T20:00:39.704Z","replayId":4,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambina"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-01T22:19:09.286Z","replayId":7,"type":"updated"},"sobject":{"Amount":78000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T22:20:46.438Z","replayId":5,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambino"}}
+
+
+
+Received Opportunity update:
+{"event":{"createdDate":"2019-12-02T03:46:43.512Z","replayId":8,"type":"updated"},"sobject":{"Amount":100000.0,"Id":"0064T000002MwmZQAS","Name":"Meal"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-01T22:24:21.986Z","replayId":6,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambino"}}
+
+
+
+Received Employee update:
+{"event":{"createdDate":"2019-12-02T03:46:07.250Z","replayId":7,"type":"updated"},"sobject":{"First_Name__c":"Trishiano","Id":"a004T0000028VbXQAU","Tenure__c":4.0,"Last_Name__c":"Bambinu"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-02T07:20:12.963Z","replayId":24,"type":"updated"},"sobject":{"Position__c":"Goal Keeper","First_Name__c":"Santana","Id":"a034T000004cZuGQAU","Last_Name__c":"Lopezno"}}
+
+
+
+Received Player update:
+{"event":{"createdDate":"2019-12-02T07:22:53.597Z","replayId":25,"type":"updated"},"sobject":{"Position__c":"Goal Keeper","First_Name__c":"Santana","Id":"a034T000004cZuGQAU","Last_Name__c":"Lopeznna"}}

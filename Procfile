@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/emp-connector-0.0.1-SNAPSHOT-phat.jar $USER_NAME $PASSWORD /topic/Employee_Updates /topic/Player_Updates /topic/Opportunity_Updates
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/emp-connector-0.0.1-SNAPSHOT-phat.jar $USER_NAME $PASSWORD /topic/Employee_Updates /topic/Player_Updates /topic/Opportunity_Updates

@@ -63,11 +63,11 @@ public class LoginExample {
         	e.printStackTrace();
         }*/
 
-        Consumer<Map<String, Object>> employeeConsumer = employeeEvent -> System.out.println(String.format("Received Employee update:\n%s", JSON.toString(employeeEvent)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> employeeConsumer = employeeEvent -> writeToFile(String.format("Received Employee update:\n%s", JSON.toString(employeeEvent)) + "\n\n\n");   //writeToFile(JSON.toString(event));
 	        
-        Consumer<Map<String, Object>> playerConsumer = playerEvent -> System.out.println(String.format("Received Player update:\n%s", JSON.toString(playerEvent)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> playerConsumer = playerEvent -> writeToFile(String.format("Received Player update:\n%s", JSON.toString(playerEvent)) + "\n\n\n");   //writeToFile(JSON.toString(event));
         
-        Consumer<Map<String, Object>> opportunityConsumer = opportunityEvent -> System.out.println(String.format("Received Opportunity update:\n%s", JSON.toString(opportunityEvent)));   //writeToFile(JSON.toString(event));
+        Consumer<Map<String, Object>> opportunityConsumer = opportunityEvent -> writeToFile(String.format("Received Opportunity update:\n%s", JSON.toString(opportunityEvent)) + "\n\n\n");   //writeToFile(JSON.toString(event));
         
         EmpConnector connector = new EmpConnector(params);
 
@@ -104,7 +104,7 @@ public class LoginExample {
 		    outputStream.close();*/
 		    
 		    BufferedWriter writer = new BufferedWriter(
-                    new FileWriter("/Users/ant/per/Salesforce_StreamingAPI/EMP-Connector/events.log", true)  //Set true for append mode
+                    new FileWriter("events.log", true)  //Set true for append mode
 			                );  
 			writer.newLine();   //Add new line
 			writer.newLine();   //Add new line
